@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tech-Dojo Assignment || ASIF</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {height: 100%;margin: 0px; padding: 0px;}
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+	<script src="scripts/myScript.js"></script>
+  </head>
+  <body onload="initialize()">
+  <p>
+  
+  <form name="controls" method="post">
+  User Name :
+    <select id="user">           
+            <option value="0">Tom</option>
+            <option value="1">Jane</option>
+            <option value="2">Dave</option>
+            <option value="3">Sarah</option>
+            <option value="4">John</option>           
+    </select>
+	&nbsp; &nbsp; &nbsp; 
+	Place :
+    <select id="place">           
+            <option value="0">School</option>
+            <option value="1" >Restaurant</option>
+            <option value="2" selected>Hospital</option>            
+            <option value="3">Bank</option>           
+    </select>
+	<button type="button" onclick="initialize()">Search</button>   
+	<span id="msg" style="margin-left: 100px; color: blue; "></span>
+    </form>	
+	
+</p> 
+
+    <div id="map-canvas"></div>
+	
+  </body> 
+</html>
